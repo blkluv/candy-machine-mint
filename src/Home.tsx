@@ -181,7 +181,9 @@ const Home = (props: HomeProps) => {
 
       <MintContainer>
         {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
+          <ConnectButton>
+            <img src="solana-wallet.png" width="200px"></img>
+          </ConnectButton>
         ) : (
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}

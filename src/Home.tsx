@@ -182,7 +182,7 @@ const Home = (props: HomeProps) => {
       <MintContainer>
         {!wallet ? (
           <ConnectButton>
-            <img src="solana-wallet.png" width="200px"></img>
+            <img src="solana-wallet.png" width="200px" alt="Connect"></img>
           </ConnectButton>
         ) : (
           <MintButton
